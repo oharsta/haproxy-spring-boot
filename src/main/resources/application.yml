@@ -1,0 +1,27 @@
+server:
+  contextPath: /
+  server-header:
+#  port: 9000
+
+logging:
+  level:
+    zilverline: DEBUG
+    org.springframework: INFO
+
+spring:
+  session:
+    store-type: jdbc
+    jdbc:
+      schema: classpath:org/springframework/session/jdbc/schema-mysql.sql
+      initialize-schema: always
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mysql://localhost/spring_session_demo?autoReconnect=true&useSSL=false
+    username: root
+    password:
+  security:
+    user:
+      name: admin
+      password: secret
+  jpa:
+    open-in-view: false

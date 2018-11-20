@@ -16,4 +16,15 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r ./haproxy-api/requirements.txt
 ```
+To build, first setup your local db:
+
+Connect to your local mysql database: `mysql -uroot`
+
+Execute the following:
+
+```sql
+CREATE DATABASE spring_session_demo DEFAULT CHARACTER SET utf8;
+```
+mvn spring-boot:run -Dspring-boot.run.jvmArguments='-Dserver.port=8081'
+
 TODO...
