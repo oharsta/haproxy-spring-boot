@@ -1,0 +1,9 @@
+server:
+  contextPath: /
+  server-header:
+  port: 9000
+
+logging:
+  level:
+    zilverline: DEBUG
+    org.springframework: WARN
