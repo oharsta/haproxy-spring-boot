@@ -1,7 +1,7 @@
 server:
   contextPath: /
   server-header:
-#  port: 9000
+  port: 9000
 
 logging:
   level:
