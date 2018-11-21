@@ -7,6 +7,7 @@ This project contains the code used in a PoC for changing haproxy weights & stat
 - Python 3.6.x
 - JDK8
 - Maven 3.x
+- mySQL 8.x
 
 ### [Getting started](#getting-started)
 Install the necessary socket packages
@@ -21,8 +22,10 @@ source .venv/bin/activate
 pip install -r ./requirements.txt
 ```
 Setup your local mysql database for the shared session management of the Spring apps: 
-`mysql -uroot`
-Execute the following:
+```
+mysql -uroot
+```
+Execute the following in the mySQL shell:
 ```sql
 CREATE DATABASE spring_session_demo DEFAULT CHARACTER SET utf8;
 ```
