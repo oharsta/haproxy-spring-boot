@@ -13,7 +13,8 @@ def info():
     print(web01.weight)
     web02 = next(s for s in nodes.servers() if s.name == 'web02')
     print(web02.weight)
-    # web01.setweight(100)
+    web01.setweight(100)
+    print(web01.weight)
 
 
 if __name__ == "__main__":
