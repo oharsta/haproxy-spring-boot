@@ -1,1 +1,2 @@
 haproxyadmin==0.2.1
+ansible==2.7.2
