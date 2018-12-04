@@ -1,0 +1,9 @@
+- name: run the playbook tasks on the localhost
+#  hosts: surf
+#  hosts: localhost
+  hosts: all
+  gather_facts: yes
+  tasks:
+
+  roles:
+  - { role: rolling_upgrade, tags: ['rolling_upgrade'] }

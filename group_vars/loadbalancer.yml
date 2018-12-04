@@ -1,0 +1,15 @@
+java_blauwrood_servers:
+   - { ip: "145.101.112.202", label: "JAPP1ROOD"}
+   - { ip: "145.101.112.203", label: "JAPP2ROOD"}
+   - { ip: "145.101.112.204", label: "JAPP3BLAUW"}
+   - { ip: "195.169.124.202", label: "JAPP4BLAUW"}
+   - { ip: "195.169.124.203", label: "JAPP5BLAUW"}
+   - { ip: "195.169.124.204", label: "JAPP6ROOD"}
+
+php_blauwrood_servers:
+   - { ip: "145.101.112.199", label: "PAPP1ROOD"}
+   - { ip: "145.101.112.200", label: "PAPP2ROOD"}
+   - { ip: "145.101.112.201", label: "PAPP3BLAUW"}
+   - { ip: "195.169.124.199", label: "PAPP4BLAUW"}
+   - { ip: "195.169.124.200", label: "PAPP5BLAUW"}
+   - { ip: "195.169.124.201", label: "PAPP6ROOD"}

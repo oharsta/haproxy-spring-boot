@@ -1,5 +1,5 @@
 - name: run the playbook tasks on the localhost
-  hosts: localhost
+  hosts: all
   tasks:
 
 #  - name: Read vars from secrets file
@@ -7,14 +7,14 @@
 #    tags:
 #      - always
 
-#  - name: Do something
-#    debug:
-#      msg: "System {{ top_secret_password }}"
+  - name: Do something
+    debug:
+      msg: "Debug message: {{ inventory_hostname }}"
 
-  - haproxy:
-      state: enabled
-      host: web01
-      fail_on_not_found: yes
-      socket: /usr/local/var/run/haproxy.sock
-      weight: "{{ weight }}"
-      backend: nodes
+#  - haproxy:
+#      state: enabled
+#      host: web01
+#      fail_on_not_found: yes
+#      socket: /usr/local/var/run/haproxy.sock
+#      weight: "{{ weight }}"
+#      backend: nodes

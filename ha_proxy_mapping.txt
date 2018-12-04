@@ -1,0 +1,22 @@
+ansible:
+host =
+backend = app_name_be
+
+{"host": "web01", "weight": "40%", "socket": "/var/lib/haproxy/"dashboard".stats"},
+backend {{ application.name }}_be
+server {{ server.label }}
+
+#- name: set weights
+#  haproxy:
+#    state: enabled
+#    host: "{{ item.host }}"
+#    fail_on_not_found: yes
+#    socket: "{{ item.socket }}"
+#    weight: "{{ item.weight }}"
+#    backend: nodes
+#  with_items: "{{ results.weights }}"
+
+
+haproxy:
+backend app_name_be
+server web01 127.0.0.1:9000 weight 100 check

@@ -50,7 +50,7 @@ You can run `haproxy-api/bin/haproxy_socket.py` and play with the setting the we
 
 To run the ansible playbook execute:
 ```
- ansible-playbook playground.yml --extra-var="weight=40"
+ansible-playbook playground.yml --extra-var="weight=40"
 ```
 Alternatively you can change the weight using `socat`:
 ```
